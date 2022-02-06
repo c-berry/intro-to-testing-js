@@ -3,8 +3,20 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 
-const sayHello = function(name) {
-    return "Hello, " + name + "!";
+// const sayHello = function(name) {
+//     return "Hello, " + name + "!";
+// }
+
+function sayHello(name) {
+    if (typeof name === "boolean") {
+        return "Hello, World!"
+    } else if (typeof name === "number") {
+        return "Hello, World!";
+    } else if (name) {
+        return "Hello, " + name + "!";
+    } else {
+        return "Hello, World!";
+        }
 }
 
 // function sayHello(name) {
