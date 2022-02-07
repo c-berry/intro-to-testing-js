@@ -31,6 +31,12 @@ function isEven(number) {
     } else return parseInt(number) % 2 === 0;
 }
 
+function isVowel(letter) {
+    if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u") {
+        return true;
+    } else return letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U";
+}
+
 // function sayHello(name) {
 //     if (name === "Jane") {
 //         return "Hello, Jane!";
