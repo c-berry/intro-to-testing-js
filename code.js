@@ -37,6 +37,10 @@ function isVowel(letter) {
     } else return letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U";
 }
 
+function addSum(number1, number2) {
+    return parseInt(number1) + parseInt(number2);
+}
+
 // function sayHello(name) {
 //     if (name === "Jane") {
 //         return "Hello, Jane!";
