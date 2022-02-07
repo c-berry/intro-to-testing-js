@@ -3,13 +3,9 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 
-// const sayHello = function(name) {
-//     return "Hello, " + name + "!";
-// }
-
 function sayHello(name) {
     if (typeof name === "boolean") {
-        return "Hello, World!"
+        return "Hello, World!";
     } else if (typeof name === "number") {
         return "Hello, World!";
     } else if (name) {
@@ -17,6 +13,16 @@ function sayHello(name) {
     } else {
         return "Hello, World!";
         }
+}
+
+function isFive(number) {
+    if (number === "5") {
+        return true;
+    } else if (number === 5) {
+        return true;
+    } else if (typeof number === "string") {
+        return number.toLowerCase().trim() && number === "five";
+    } else return false;
 }
 
 // function sayHello(name) {
