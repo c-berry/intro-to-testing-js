@@ -64,3 +64,33 @@ describe("isFive", function() {
         expect(isFive("five")).toBe(true);
     });
 });
+
+describe("isEven", function() {
+    it("should be a defined function", function () {
+        expect(typeof isEven).toBe("function");
+    });
+    it("should return boolean false", function() {
+        expect(isEven()).toBe(false);
+    });
+    it("should return boolean true", function() {
+        expect(isEven(-4)).toBe(true);
+    });
+    it("should return boolean false", function() {
+        expect(isEven(3)).toBe(false);
+    });
+    it("should return boolean false", function() {
+        expect(isEven("banana")).toBe(false);
+    });
+    it("should return boolean true", function() {
+        expect(isEven("8")).toBe(true);
+    });
+    it("should return boolean false", function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it("should return boolean false", function() {
+        expect(isEven(true)).toBe(false);
+    });
+    it("should return boolean false", function() {
+        expect(isEven(false)).toBe(false);
+    });
+});

@@ -18,11 +18,17 @@ function sayHello(name) {
 function isFive(number) {
     if (number === "5") {
         return true;
-    } else if (number === 5) {
-        return true;
     } else if (typeof number === "string") {
         return number.toLowerCase().trim() && number === "five";
-    } else return false;
+    } else {
+        return (number === 5);
+    }
+}
+
+function isEven(number) {
+    if(typeof number === "string") {
+        return parseInt(number) % 2 === 0;
+    } else return parseInt(number) % 2 === 0;
 }
 
 // function sayHello(name) {
